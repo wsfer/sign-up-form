@@ -9,10 +9,41 @@
 }
 
 @font-face {
-    font-family: ;
-    src: url("fonts/");
+    font-family: norse-bold;
+    src: url("fonts/Norse-Bold.otf");
 }
 
 body {
     display: flex;
+}
+
+.title-container {
+    background-image: url(images/green-plant-background.jpg);
+    width: calc(100vw/3);
+    position: relative;
+}
+
+.title-container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title-container > p {
+    position: absolute;
+    bottom: 0;
+    padding: 8px;
+    color: white;
+}
+
+.title-container > div > h1 {
+    font-size: 4rem;
+    font-family: norse-bold;
+    color: white;
+}
+
+.title-container > div > img {
+    height: 5rem;
 }
