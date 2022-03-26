@@ -32,6 +32,22 @@ body {
     display: flex;
 }
 
+.theme {
+    color: var(--font-color);
+    font-weight: bold;
+    font-size: 0.75rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px;
+    background: transparent;
+}
+
+.theme:hover {
+    color: goldenrod;
+    cursor: pointer;
+}
+
 .title-container {
     background-image: url(images/green-plant-background.jpg);
     background-repeat: no-repeat;
