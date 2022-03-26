@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+}
+
+@font-face {
+    font-family: ;
+    src: url("fonts/");
+}
+
+body {
+    display: flex;
+}
