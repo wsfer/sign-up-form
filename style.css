@@ -139,6 +139,12 @@ fieldset input {
     padding: 4px 8px;
 }
 
+input + p, input:not(:placeholder-shown):invalid:focus + p {
+    display: none;
+    font-size: 0.75rem;
+    color: red;
+}
+
 fieldset input:focus {
     border: 1px solid #6666FF;
     box-shadow: 2px 2px 5px #AAAAAA;
@@ -146,6 +152,10 @@ fieldset input:focus {
 
 input:not(:placeholder-shown):invalid {
     border: 1px solid #FF6666;
+}
+
+input:not(:placeholder-shown):invalid + p {
+    display: block;
 }
 
 main > button {
