@@ -144,7 +144,7 @@ fieldset input:focus {
     box-shadow: 2px 2px 5px #AAAAAA;
 }
 
-fieldset input:invalid {
+input:not(:placeholder-shown):invalid {
     border: 1px solid #FF6666;
 }
 
@@ -156,6 +156,7 @@ main > button {
     padding: 0.75rem 3rem;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }
 
 main p:last-child > a {
