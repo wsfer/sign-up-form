@@ -156,6 +156,11 @@ input:not(:placeholder-shown):invalid {
     border: 1px solid #FF6666;
 }
 
+/*This selector below is for javascript*/
+input.invalid-password {
+    border: 1px solid #FF6666;
+}
+
 input:not(:placeholder-shown):invalid + p {
     display: block;
 }
