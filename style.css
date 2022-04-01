@@ -142,7 +142,7 @@ fieldset input {
 }
 
 input + p, input:not(:placeholder-shown):invalid:focus + p {
-    display: none;
+    visibility: hidden;
     font-size: 0.75rem;
     color: red;
 }
@@ -162,7 +162,7 @@ input.invalid-password {
 }
 
 input:not(:placeholder-shown):invalid + p {
-    display: block;
+    visibility: visible;
 }
 
 main > button {

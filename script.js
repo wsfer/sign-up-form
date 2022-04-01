@@ -23,13 +23,15 @@ let passwordConfirm = document.querySelector('#psw-confirm');
 let pswErrorMsg = document.querySelector('.psw-error');
 
 passwordConfirm.addEventListener('focusout', checkPassword);
+passwordConfirm.addEventListener('focusin', () => pswErrorMsg.style.visibility = "hidden");
+password.addEventListener('focusout', checkPassword)
 
 function checkPassword () {
     if (!passwordConfirm.value || password.value == passwordConfirm.value) {
-        pswErrorMsg.style.display = "none";
+        pswErrorMsg.style.visibility = "hidden";
         passwordConfirm.classList.remove('invalid-password');
     } else {
-        pswErrorMsg.style.display = "block";
+        pswErrorMsg.style.visibility = "visible";
         passwordConfirm.classList.add('invalid-password');
     }
 }
