@@ -33,3 +33,13 @@ function checkPassword () {
         passwordConfirm.classList.add('invalid-password');
     }
 }
+
+window.onload = function () {
+    firstName.value = '';
+    lastName.value = '';
+    email.value = '';
+    phone.value = '';
+    password.value = '';
+    passwordConfirm.value = '';
+
+}
